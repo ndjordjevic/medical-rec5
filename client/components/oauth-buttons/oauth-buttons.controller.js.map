@@ -1,0 +1,1 @@
+{"version":3,"file":"oauth-buttons.controller.js","sourceRoot":"","sources":["oauth-buttons.controller.ts"],"names":[],"mappings":"AAAA,YAAY,CAAC;AAEb,OAAO,CAAC,MAAM,CAAC,gBAAgB,CAAC;KAC7B,UAAU,CAAC,kBAAkB,EAAE,UAAS,OAAO;IAC9C,IAAI,CAAC,UAAU,GAAG,UAAS,QAAQ;QACjC,OAAO,CAAC,QAAQ,CAAC,IAAI,GAAG,QAAQ,GAAG,QAAQ,CAAC;IAC9C,CAAC,CAAC;AACJ,CAAC,CAAC,CAAC"}

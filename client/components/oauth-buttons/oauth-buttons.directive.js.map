@@ -1,0 +1,1 @@
+{"version":3,"file":"oauth-buttons.directive.js","sourceRoot":"","sources":["oauth-buttons.directive.ts"],"names":[],"mappings":"AAAA,YAAY,CAAC;AAEb,OAAO,CAAC,MAAM,CAAC,gBAAgB,CAAC;KAC7B,SAAS,CAAC,cAAc,EAAE;IACzB,MAAM,CAAC;QACL,WAAW,EAAE,6CAA6C;QAC1D,QAAQ,EAAE,IAAI;QACd,UAAU,EAAE,kBAAkB;QAC9B,YAAY,EAAE,cAAc;QAC5B,KAAK,EAAE;YACL,OAAO,EAAE,GAAG;SACb;KACF,CAAC;AACJ,CAAC,CAAC,CAAC"}
