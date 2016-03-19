@@ -10,3 +10,4 @@ npm-debug.log
 coverage
 *.iml
 .DS_Store
+*.tmp.txt

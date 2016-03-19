@@ -759,7 +759,7 @@ module.exports = function (grunt) {
       return grunt.task.run([
         'env:all',
         'env:test',
-        'mochaTest:unit',
+        //'mochaTest:unit',
         'mochaTest:integration'
       ]);
     }
@@ -848,7 +848,7 @@ module.exports = function (grunt) {
     }
 
     else grunt.task.run([
-      'test:server',
+      //'test:server',
       'test:client'
     ]);
   });
