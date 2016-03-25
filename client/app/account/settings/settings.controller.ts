@@ -1,6 +1,12 @@
 'use strict';
 
 class SettingsController {
+  private errors;
+  private submitted;
+  private Auth;
+  private user;
+  private message;
+
   constructor(Auth) {
     this.errors = {};
     this.submitted = false;

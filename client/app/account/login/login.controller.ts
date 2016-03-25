@@ -1,6 +1,12 @@
 'use strict';
 
 class LoginController {
+  private user;
+  private errors;
+  private submitted;
+  private Auth;
+  private $state;
+
   constructor(Auth, $state) {
     this.user = {};
     this.errors = {};
@@ -15,16 +21,16 @@ class LoginController {
 
     if (form.$valid) {
       this.Auth.login({
-        email: this.user.email,
-        password: this.user.password
-      })
-      .then(() => {
-        // Logged in, redirect to home
-        this.$state.go('main');
-      })
-      .catch(err => {
-        this.errors.other = err.message;
-      });
+          email: this.user.email,
+          password: this.user.password
+        })
+        .then(() => {
+          // Logged in, redirect to home
+          this.$state.go('main');
+        })
+        .catch(err => {
+          this.errors.other = err.message;
+        });
     }
   }
 }

@@ -8,6 +8,9 @@ class NavbarController {
   }];
 
   isCollapsed = true;
+  private isLoggedIn;
+  private isAdmin;
+  private getCurrentUser;
   //end-non-standard
 
   constructor(Auth) {

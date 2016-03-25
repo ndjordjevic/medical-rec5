@@ -3,9 +3,15 @@
 describe('Component: mainComponent', function() {
 
   // load the controller's module
-  beforeEach(module('medicalRec5App'));
-  beforeEach(module('stateMock'));
-  beforeEach(module('socketMock'));
+  beforeEach(function () {
+    angular.mock.module('medicalRec5App');
+  });
+  beforeEach(function () {
+    angular.mock.module('stateMock');
+  });
+  beforeEach(function () {
+    angular.mock.module('socketMock');
+  });
 
   var scope;
   var mainComponent;

@@ -3,7 +3,9 @@
 describe('Controller: OauthButtonsCtrl', function() {
 
   // load the controller's module
-  beforeEach(module('medicalRec5App'));
+  beforeEach(function () {
+    angular.mock.module('medicalRec5App');
+  });
 
   var OauthButtonsCtrl, $window;
 

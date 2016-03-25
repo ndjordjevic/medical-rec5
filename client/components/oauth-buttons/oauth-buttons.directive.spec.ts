@@ -3,8 +3,12 @@
 describe('Directive: oauthButtons', function() {
 
   // load the directive's module and view
-  beforeEach(module('medicalRec5App'));
-  beforeEach(module('components/oauth-buttons/oauth-buttons.html'));
+  beforeEach(function () {
+    angular.mock.module('medicalRec5App');
+  });
+  beforeEach(function () {
+    angular.mock.module('components/oauth-buttons/oauth-buttons.html');
+  });
 
   var element, parentScope, elementScope;
 
