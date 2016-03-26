@@ -26,8 +26,8 @@ var server = http.createServer(app);
 var socketio = require('socket.io')(server, {
   serveClient: config.env !== 'production',
   path: '/socket.io-client'
-});
-require('./config/socketio')(socketio);
+}).default();
+require('./config/socketio')(socketio).default();
 require('./config/express')(app);
 require('./routes')(app);
 
