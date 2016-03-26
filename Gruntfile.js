@@ -562,14 +562,9 @@ module.exports = function (grunt) {
     babel: {
       options: {
         sourceMap: true,
-        optional: [
-          'es7.classProperties'
-        ]
+        presets: ['babel-preset-es2015']
       },
       server: {
-        options: {
-          optional: ['runtime']
-        },
         files: [{
           expand: true,
           cwd: '<%= yeoman.server %>',
