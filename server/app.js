@@ -23,13 +23,16 @@ if (config.seedDB) { require('./config/seed'); }
 // Setup server
 var app = express();
 var server = http.createServer(app);
-var socketio = require('socket.io')(server, {
+
+import socketio from 'socket.io';
+var socketioServer = socketio(server, {
   serveClient: config.env !== 'production',
   path: '/socket.io-client'
 });
-require('./config/socketio')(socketio);
-require('./config/express')(app);
-require('./routes')(app);
+
+require('./config/socketio').default(socketioServer);
+require('./config/express').default(app);
+require('./routes').default(app);
 
 // Start server
 function startServer() {
